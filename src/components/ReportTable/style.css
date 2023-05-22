@@ -1,0 +1,11 @@
+th, td{
+    text-align: center!important;
+}
+
+.table-bordered>:not(caption)>*>* {
+    border-width: 3px 3px!important;
+}
+
+.table {
+    --bs-table-border-color: #000000!important;
+}

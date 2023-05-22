@@ -1,0 +1,25 @@
+.main__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+.main__container a{
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 30px;
+    transition: 0.5s all;
+    text-decoration: none;
+}
+
+.main__container a:active{
+    color: black;
+    opacity: 0.8;
+}
+
+.main__container a:hover {
+    color: black;
+    opacity: 0.8;
+}
