@@ -76,7 +76,7 @@ const ReportTable = ({elem, getLines}) => {
             <tr>
                 <td>10:00-11:00</td>
                 <td>
-                    {getHourReport("10:00-11:00").length > 0 ? getHourReport("10:00-11:00")[0].quantity :
+                    {getHourReport("10:00-11:00").length > 0 ?`Количество: ${getHourReport("10:00-11:00")[0].quantity} Работники: ${getHourReport("10:00-11:00")[0].workers}` :
                         <ReportTableCell elem={elem} hours={"10:00-11:00"} date={getTodayDate()}
                                          postReportPerHour={postReportPerHour}  postReports={postReports}/>}
                 </td>
@@ -84,7 +84,7 @@ const ReportTable = ({elem, getLines}) => {
             <tr>
                 <td>11:00-12:00</td>
                 <td>
-                    {getHourReport("11:00-12:00").length > 0 ? getHourReport("11:00-12:00")[0].quantity :
+                    {getHourReport("11:00-12:00").length > 0 ?`Количество: ${getHourReport("11:00-12:00")[0].quantity} Работники: ${getHourReport("11:00-12:00")[0].workers}` :
                         <ReportTableCell elem={elem} hours={"11:00-12:00"} date={getTodayDate()}
                                          postReportPerHour={postReportPerHour}  postReports={postReports}/>}
                 </td>
@@ -92,7 +92,7 @@ const ReportTable = ({elem, getLines}) => {
             <tr>
                 <td>12:00-13:00</td>
                 <td>
-                    {getHourReport("12:00-13:00").length > 0 ? getHourReport("12:00-13:00")[0].quantity :
+                    {getHourReport("12:00-13:00").length > 0 ?`Количество: ${getHourReport("12:00-13:00")[0].quantity} Работники: ${getHourReport("12:00-13:00")[0].workers}` :
                         <ReportTableCell elem={elem} hours={"12:00-13:00"} date={getTodayDate()}
                                          postReportPerHour={postReportPerHour}  postReports={postReports}/>}
                 </td>
@@ -100,7 +100,7 @@ const ReportTable = ({elem, getLines}) => {
             <tr>
                 <td>13:00-14:00</td>
                 <td>
-                    {getHourReport("13:00-14:00").length > 0 ? getHourReport("13:00-14:00")[0].quantity :
+                    {getHourReport("13:00-14:00").length > 0 ?`Количество: ${getHourReport("13:00-14:00")[0].quantity} Работники: ${getHourReport("13:00-14:00")[0].workers}` :
                         <ReportTableCell elem={elem} hours={"13:00-14:00"} date={getTodayDate()}
                                          postReportPerHour={postReportPerHour}  postReports={postReports}/>}
                 </td>
@@ -108,7 +108,7 @@ const ReportTable = ({elem, getLines}) => {
             <tr>
                 <td>14:00-15:00</td>
                 <td>
-                    {getHourReport("14:00-15:00").length > 0 ? getHourReport("14:00-15:00")[0].quantity :
+                    {getHourReport("14:00-15:00").length > 0 ?`Количество: ${getHourReport("14:00-15:00")[0].quantity} Работники: ${getHourReport("14:00-15:00")[0].workers}` :
                         <ReportTableCell elem={elem} hours={"14:00-15:00"} date={getTodayDate()}
                                          postReportPerHour={postReportPerHour}  postReports={postReports}/>}
                 </td>
@@ -116,7 +116,7 @@ const ReportTable = ({elem, getLines}) => {
             <tr>
                 <td>15:00-16:00</td>
                 <td>
-                    {getHourReport("15:00-16:00").length > 0 ? getHourReport("15:00-16:00")[0].quantity :
+                    {getHourReport("15:00-16:00").length > 0 ?`Количество: ${getHourReport("15:00-16:00")[0].quantity} Работники: ${getHourReport("15:00-16:00")[0].workers}` :
                         <ReportTableCell elem={elem} hours={"15:00-16:00"} date={getTodayDate()}
                                          postReportPerHour={postReportPerHour}  postReports={postReports}/>}
                 </td>
@@ -124,7 +124,7 @@ const ReportTable = ({elem, getLines}) => {
             <tr>
                 <td>16:00-17:00</td>
                 <td>
-                    {getHourReport("16:00-17:00").length > 0 ? getHourReport("16:00-17:00")[0].quantity :
+                    {getHourReport("16:00-17:00").length > 0 ?`Количество: ${getHourReport("16:00-17:00")[0].quantity} Работники: ${getHourReport("16:00-17:00")[0].workers}` :
                         <ReportTableCell elem={elem} hours={"16:00-17:00"} date={getTodayDate()}
                                          postReportPerHour={postReportPerHour}  postReports={postReports}/>}
                 </td>
@@ -132,7 +132,7 @@ const ReportTable = ({elem, getLines}) => {
             <tr>
                 <td>17:00-18:00</td>
                 <td>
-                    {getHourReport("17:00-18:00").length > 0 ? getHourReport("17:00-18:00")[0].quantity :
+                    {getHourReport("17:00-18:00").length > 0 ?`Количество: ${getHourReport("17:00-18:00")[0].quantity} Работники: ${getHourReport("17:00-18:00")[0].workers}` :
                         <ReportTableCell elem={elem} hours={"17:00-18:00"} date={getTodayDate()}
                                          postReportPerHour={postReportPerHour}  postReports={postReports}/>}
                 </td>
@@ -140,7 +140,7 @@ const ReportTable = ({elem, getLines}) => {
             <tr>
                 <td>18:00-19:00</td>
                 <td>
-                    {getHourReport("18:00-19:00").length > 0 ? getHourReport("18:00-19:00")[0].quantity :
+                    {getHourReport("18:00-19:00").length > 0 ?`Количество: ${getHourReport("18:00-19:00")[0].quantity} Работники: ${getHourReport("18:00-19:00")[0].workers}` :
                         <ReportTableCell elem={elem} hours={"18:00-19:00"} date={getTodayDate()}
                                          postReportPerHour={postReportPerHour}  postReports={postReports}/>}
                 </td>
@@ -148,7 +148,7 @@ const ReportTable = ({elem, getLines}) => {
             <tr>
                 <td>19:00-20:00</td>
                 <td>
-                    {getHourReport("19:00-20:00").length > 0 ? getHourReport("19:00-20:00")[0].quantity :
+                    {getHourReport("19:00-20:00").length > 0 ?`Количество: ${getHourReport("19:00-20:00")[0].quantity} Работники: ${getHourReport("19:00-20:00")[0].workers}` :
                         <ReportTableCell elem={elem} hours={"19:00-20:00"} date={getTodayDate()}
                                          postReportPerHour={postReportPerHour}  postReports={postReports}/>}
                 </td>
