@@ -1,17 +1,25 @@
 .main__container{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 20px;
     justify-content: space-around;
     min-height: 100vh;
 }
 
 .main__container a{
-    border: 1px solid black;
-    border-radius: 5px;
     color: black;
     padding: 15px 30px;
     transition: 0.5s all;
     text-decoration: none;
+    --border-radius: 24px;
+    --border-width: 8px;
+    appearance: none;
+    position: relative;
+    border: 0;
+    background-color: transparent;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 .main__container a:active{
@@ -22,4 +30,37 @@
 .main__container a:hover {
     color: black;
     opacity: 0.8;
+}
+
+.main__container a::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+            #488cfb,
+            #29dbbc,
+            #ddf505,
+            #ff9f0e,
+            #e440bb,
+            #655adc,
+            #488cfb
+    );
+
+    mask-image: var(--m-i), var(--m-i);
+    mask-origin: var(--m-o);
+    mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+
+    filter: hue-rotate(0);
+    animation: hue linear 500ms infinite;
+    animation-play-state: paused;
 }

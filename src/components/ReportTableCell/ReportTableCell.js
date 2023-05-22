@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import "./style.css"
 
 const ReportTableCell = ({hours, date, postReportPerHour, elem,  postReports}) => {
     const [workers, setWorkers] = useState(elem.workers)
     const [quantity, setQuantity] = useState(0)
     const [description, setDescription] = useState("")
     return (
-        <div style={{display:"flex", alignItems:"center", columnGap:"20px"}}>
+        <div className={"table-cell"} style={{display:"flex", alignItems:"center", gap:"20px"}}>
             <TextField id="outlined-number" label="Количество продукта" type="number"
                        onChange={(e) => setQuantity(+e.target.value)}/>
             <TextField id="outlined-number" label="Количество людей" type="number"

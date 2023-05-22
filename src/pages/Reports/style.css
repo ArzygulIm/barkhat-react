@@ -1,0 +1,21 @@
+.report__container{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.report__container a{
+    color: black;
+    font-size: 20px;
+}
+
+.report__container a:active{
+    color: black;
+    opacity: 0.8;
+}
+
+.report__container a:hover{
+    color: black;
+    opacity: 0.8;
+}

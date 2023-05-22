@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Table from "react-bootstrap/Table";
 import {LINES_API} from "../../config";
-import ReportTableCell from "../ReportTableCell/ReportTableCell";
+import "./style.css";
 
 const ClientPage = ({el}) => {
     const [line, setLine] = useState({})
@@ -95,7 +95,7 @@ const ClientPage = ({el}) => {
     }, [line]);
 
     return (
-        <div>
+        <div className={"client__page"}>
             <h6>{line.model}</h6>
             <Table bordered hover>
                 <thead>

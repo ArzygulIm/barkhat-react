@@ -1,0 +1,10 @@
+@media(max-width:1200px) {
+    .table-cell{
+        flex-wrap: wrap;
+    }
+}
+/*@media(max-width:1000px) {*/
+/*    .table-cell{*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
