@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react';
-import {LINES_API} from '../../config'
+import React from 'react';
 import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";

@@ -33,9 +33,7 @@ const ClientPage = ({el}) => {
             console.log(array)
             let sum = 0
             if (array.length > 0) {
-                array.map(el => {
-                    sum = sum + el.quantity
-                })
+                array.map(el => sum = sum + el.quantity)
             }
             return sum
         }
