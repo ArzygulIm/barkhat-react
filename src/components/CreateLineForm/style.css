@@ -1,3 +1,7 @@
 .css-1xhypcz-MuiStack-root {
     overflow: visible!important;
 }
+
+.css-xn6ruc > :not(style) {
+    overflow: visible!important;
+}
